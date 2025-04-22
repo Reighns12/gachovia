@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My web site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px 0;
+        }
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .info {
+            display: none;
+            margin: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Web Developer for Hire</h1>
+    </header>
+    <img src="photo1.jpg" alt="My Profile Photo">
+    <p>Hi, I am a highly capable web developer and cybercrime professional with extensive experience.</p>
+    <button onclick="showExamples()">See My Work</button>
+    <div id="examples" class="info">
+        <h3>Examples of My Work:</h3>
+        <ul>
+            <li>Responsive websites</li>
+            <li>Web applications</li>
+            <li>Cybersecurity audits</li>
+            <li>Penetration testing</li>
+        </ul>
+    </div>
+    <button onclick="showContacts()">Contact Me</button>
+    <div id="contacts" class="info">
+        <h3>Contact Information:</h3>
+        <p>phone: +254794746802       </p>
+        <p>Email: ireriishmael072@gmail.com</p>
+        <p>Instagram: <a href="https://instagram.com/yourprofile" target="_blank">@r.e.i.g.h.n.s</a></p>
+    </div>
+    <script>
+        function showExamples() {
+            const examples = document.getElementById('examples');
+            examples.style.display = examples.style.display === 'block' ? 'none' : 'block';
+        }
+        function showContacts() {
+            const contacts = document.getElementById('contacts');
+            contacts.style.display = contacts.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+    
+</body>
+</html>
